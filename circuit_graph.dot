@@ -1,0 +1,673 @@
+digraph CircuitGraph {
+  rankdir=LR;
+  nodesep=0.8;
+  ranksep=1.2;
+  node [shape=plaintext, fontname="Arial, sans-serif"];
+  edge [color="#555555", penwidth=1.5, arrowsize=0.8];
+
+  node0 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#c0392b"><FONT COLOR="white"><B>G</B>  [OR (PO)]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">9 / 5 / 0</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.4040</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">1.0000</TD></TR>
+</TABLE>
+>];
+  node1 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#c0392b"><FONT COLOR="white"><B>E</B>  [AND (PO)]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">4 / 13 / 0</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.0625</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">1.0000</TD></TR>
+</TABLE>
+>];
+  node2 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#c0392b"><FONT COLOR="white"><B>L</B>  [OR (PO)]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">9 / 5 / 0</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.4040</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">1.0000</TD></TR>
+</TABLE>
+>];
+  node3 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#27ae60"><FONT COLOR="white"><B>a3</B>  [INPUT]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 10</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.3973</TD></TR>
+</TABLE>
+>];
+  node4 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#27ae60"><FONT COLOR="white"><B>a2</B>  [INPUT]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 12</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1703</TD></TR>
+</TABLE>
+>];
+  node5 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#27ae60"><FONT COLOR="white"><B>a1</B>  [INPUT]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 12</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1250</TD></TR>
+</TABLE>
+>];
+  node6 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#27ae60"><FONT COLOR="white"><B>a0</B>  [INPUT]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 12</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1250</TD></TR>
+</TABLE>
+>];
+  node7 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#27ae60"><FONT COLOR="white"><B>b3</B>  [INPUT]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 10</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.3973</TD></TR>
+</TABLE>
+>];
+  node8 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#27ae60"><FONT COLOR="white"><B>b2</B>  [INPUT]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 12</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1703</TD></TR>
+</TABLE>
+>];
+  node9 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#27ae60"><FONT COLOR="white"><B>b1</B>  [INPUT]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 12</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1250</TD></TR>
+</TABLE>
+>];
+  node10 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#27ae60"><FONT COLOR="white"><B>b0</B>  [INPUT]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 12</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1250</TD></TR>
+</TABLE>
+>];
+  node11 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#34495e"><FONT COLOR="white"><B>na3</B>  [NOT]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">2 / 2 / 9</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.3973</TD></TR>
+</TABLE>
+>];
+  node12 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#34495e"><FONT COLOR="white"><B>na2</B>  [NOT]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">2 / 2 / 12</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1703</TD></TR>
+</TABLE>
+>];
+  node13 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#34495e"><FONT COLOR="white"><B>na1</B>  [NOT]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">2 / 2 / 15</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0795</TD></TR>
+</TABLE>
+>];
+  node14 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#34495e"><FONT COLOR="white"><B>na0</B>  [NOT]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">2 / 2 / 18</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0385</TD></TR>
+</TABLE>
+>];
+  node15 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#34495e"><FONT COLOR="white"><B>nb3</B>  [NOT]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">2 / 2 / 9</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.3973</TD></TR>
+</TABLE>
+>];
+  node16 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#34495e"><FONT COLOR="white"><B>nb2</B>  [NOT]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">2 / 2 / 12</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1703</TD></TR>
+</TABLE>
+>];
+  node17 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#34495e"><FONT COLOR="white"><B>nb1</B>  [NOT]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">2 / 2 / 15</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0795</TD></TR>
+</TABLE>
+>];
+  node18 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#34495e"><FONT COLOR="white"><B>nb0</B>  [NOT]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">2 / 2 / 18</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0385</TD></TR>
+</TABLE>
+>];
+  node19 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#34495e"><FONT COLOR="white"><B>x3</B>  [XNOR]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">3 / 3 / 10</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1703</TD></TR>
+</TABLE>
+>];
+  node20 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#34495e"><FONT COLOR="white"><B>x2</B>  [XNOR]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">3 / 3 / 10</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1250</TD></TR>
+</TABLE>
+>];
+  node21 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#34495e"><FONT COLOR="white"><B>x1</B>  [XNOR]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">3 / 3 / 10</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1250</TD></TR>
+</TABLE>
+>];
+  node22 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#34495e"><FONT COLOR="white"><B>x0</B>  [XNOR]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">3 / 3 / 10</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1250</TD></TR>
+</TABLE>
+>];
+  node23 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#34495e"><FONT COLOR="white"><B>g_term3</B>  [AND]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">2 / 4 / 7</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.2500</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.7947</TD></TR>
+</TABLE>
+>];
+  node24 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#34495e"><FONT COLOR="white"><B>g_term2</B>  [AND]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">2 / 7 / 7</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.1250</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.6812</TD></TR>
+</TABLE>
+>];
+  node25 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#34495e"><FONT COLOR="white"><B>g_term1</B>  [AND]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">2 / 10 / 7</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.0625</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.6357</TD></TR>
+</TABLE>
+>];
+  node26 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#34495e"><FONT COLOR="white"><B>g_term0</B>  [AND]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">2 / 13 / 7</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.0312</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.6152</TD></TR>
+</TABLE>
+>];
+  node27 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#34495e"><FONT COLOR="white"><B>l_term3</B>  [AND]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">2 / 4 / 7</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.2500</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.7947</TD></TR>
+</TABLE>
+>];
+  node28 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#34495e"><FONT COLOR="white"><B>l_term2</B>  [AND]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">2 / 7 / 7</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.1250</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.6812</TD></TR>
+</TABLE>
+>];
+  node29 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#34495e"><FONT COLOR="white"><B>l_term1</B>  [AND]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">2 / 10 / 7</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.0625</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.6357</TD></TR>
+</TABLE>
+>];
+  node30 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#34495e"><FONT COLOR="white"><B>l_term0</B>  [AND]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">2 / 13 / 7</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.0312</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.6152</TD></TR>
+</TABLE>
+>];
+  node31 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>a3_1</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 10</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.3973</TD></TR>
+</TABLE>
+>];
+  node32 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>a3_2</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 12</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1703</TD></TR>
+</TABLE>
+>];
+  node33 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>a3_3</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 10</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.3973</TD></TR>
+</TABLE>
+>];
+  node34 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>a2_1</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 13</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1703</TD></TR>
+</TABLE>
+>];
+  node35 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>a2_2</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 12</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1250</TD></TR>
+</TABLE>
+>];
+  node36 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>a2_3</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 13</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1703</TD></TR>
+</TABLE>
+>];
+  node37 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>a1_1</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 16</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0795</TD></TR>
+</TABLE>
+>];
+  node38 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>a1_2</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 12</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1250</TD></TR>
+</TABLE>
+>];
+  node39 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>a1_3</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 16</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0795</TD></TR>
+</TABLE>
+>];
+  node40 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>a0_1</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 19</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0385</TD></TR>
+</TABLE>
+>];
+  node41 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>a0_2</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 12</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1250</TD></TR>
+</TABLE>
+>];
+  node42 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>a0_3</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 19</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0385</TD></TR>
+</TABLE>
+>];
+  node43 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>b3_1</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 10</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.3973</TD></TR>
+</TABLE>
+>];
+  node44 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>b3_2</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 12</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1703</TD></TR>
+</TABLE>
+>];
+  node45 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>b3_3</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 10</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.3973</TD></TR>
+</TABLE>
+>];
+  node46 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>b2_1</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 13</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1703</TD></TR>
+</TABLE>
+>];
+  node47 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>b2_2</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 12</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1250</TD></TR>
+</TABLE>
+>];
+  node48 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>b2_3</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 13</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1703</TD></TR>
+</TABLE>
+>];
+  node49 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>b1_1</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 16</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0795</TD></TR>
+</TABLE>
+>];
+  node50 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>b1_2</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 12</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1250</TD></TR>
+</TABLE>
+>];
+  node51 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>b1_3</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 16</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0795</TD></TR>
+</TABLE>
+>];
+  node52 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>b0_1</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 19</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0385</TD></TR>
+</TABLE>
+>];
+  node53 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>b0_2</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 12</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1250</TD></TR>
+</TABLE>
+>];
+  node54 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>b0_3</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">1 / 1 / 19</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0385</TD></TR>
+</TABLE>
+>];
+  node55 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>x3_1</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">3 / 3 / 10</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1250</TD></TR>
+</TABLE>
+>];
+  node56 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>x3_2</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">3 / 3 / 11</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1703</TD></TR>
+</TABLE>
+>];
+  node57 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>x3_3</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">3 / 3 / 14</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0795</TD></TR>
+</TABLE>
+>];
+  node58 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>x3_4</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">3 / 3 / 17</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0385</TD></TR>
+</TABLE>
+>];
+  node59 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>x3_5</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">3 / 3 / 11</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1703</TD></TR>
+</TABLE>
+>];
+  node60 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>x3_6</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">3 / 3 / 14</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0795</TD></TR>
+</TABLE>
+>];
+  node61 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>x3_7</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">3 / 3 / 17</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0385</TD></TR>
+</TABLE>
+>];
+  node62 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>x2_1</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">3 / 3 / 10</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1250</TD></TR>
+</TABLE>
+>];
+  node63 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>x2_2</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">3 / 3 / 14</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0795</TD></TR>
+</TABLE>
+>];
+  node64 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>x2_3</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">3 / 3 / 17</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0385</TD></TR>
+</TABLE>
+>];
+  node65 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>x2_4</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">3 / 3 / 14</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0795</TD></TR>
+</TABLE>
+>];
+  node66 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>x2_5</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">3 / 3 / 17</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0385</TD></TR>
+</TABLE>
+>];
+  node67 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>x1_1</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">3 / 3 / 10</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.1250</TD></TR>
+</TABLE>
+>];
+  node68 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>x1_2</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">3 / 3 / 17</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0385</TD></TR>
+</TABLE>
+>];
+  node69 [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#aaaaaa">
+  <TR><TD COLSPAN="2" BGCOLOR="#e67e22"><FONT COLOR="white"><B>x1_3</B>  [BRNH]</FONT></TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>SCOAP</B> (CC0/CC1/CO)</TD><TD BGCOLOR="#f8f9fa">3 / 3 / 17</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff"><B>COP</B> (P=1)</TD><TD BGCOLOR="#ffffff">0.5000</TD></TR>
+  <TR><TD ALIGN="LEFT" BGCOLOR="#f8f9fa"><B>COP</B> (Obs)</TD><TD BGCOLOR="#f8f9fa">0.0385</TD></TR>
+</TABLE>
+>];
+
+  // 2. Define Edges (Connections)
+  node3 -> node31;
+  node3 -> node32;
+  node3 -> node33;
+  node4 -> node34;
+  node4 -> node35;
+  node4 -> node36;
+  node5 -> node37;
+  node5 -> node38;
+  node5 -> node39;
+  node6 -> node40;
+  node6 -> node41;
+  node6 -> node42;
+  node7 -> node43;
+  node7 -> node44;
+  node7 -> node45;
+  node8 -> node46;
+  node8 -> node47;
+  node8 -> node48;
+  node9 -> node49;
+  node9 -> node50;
+  node9 -> node51;
+  node10 -> node52;
+  node10 -> node53;
+  node10 -> node54;
+  node11 -> node27;
+  node12 -> node28;
+  node13 -> node29;
+  node14 -> node30;
+  node15 -> node23;
+  node16 -> node24;
+  node17 -> node25;
+  node18 -> node26;
+  node19 -> node55;
+  node19 -> node56;
+  node19 -> node57;
+  node19 -> node58;
+  node19 -> node59;
+  node19 -> node60;
+  node19 -> node61;
+  node20 -> node62;
+  node20 -> node63;
+  node20 -> node64;
+  node20 -> node65;
+  node20 -> node66;
+  node21 -> node67;
+  node21 -> node68;
+  node21 -> node69;
+  node22 -> node1;
+  node23 -> node0;
+  node24 -> node0;
+  node25 -> node0;
+  node26 -> node0;
+  node27 -> node2;
+  node28 -> node2;
+  node29 -> node2;
+  node30 -> node2;
+  node31 -> node11;
+  node32 -> node19;
+  node33 -> node23;
+  node34 -> node12;
+  node35 -> node20;
+  node36 -> node24;
+  node37 -> node13;
+  node38 -> node21;
+  node39 -> node25;
+  node40 -> node14;
+  node41 -> node22;
+  node42 -> node26;
+  node43 -> node15;
+  node44 -> node19;
+  node45 -> node27;
+  node46 -> node16;
+  node47 -> node20;
+  node48 -> node28;
+  node49 -> node17;
+  node50 -> node21;
+  node51 -> node29;
+  node52 -> node18;
+  node53 -> node22;
+  node54 -> node30;
+  node55 -> node1;
+  node56 -> node24;
+  node57 -> node25;
+  node58 -> node26;
+  node59 -> node28;
+  node60 -> node29;
+  node61 -> node30;
+  node62 -> node1;
+  node63 -> node25;
+  node64 -> node26;
+  node65 -> node29;
+  node66 -> node30;
+  node67 -> node1;
+  node68 -> node26;
+  node69 -> node30;
+
+  // 3. Structural Alignment (Force neatly aligned columns based on logic level)
+  { rank=same; node3; node4; node5; node6; node7; node8; node9; node10; }
+  { rank=same; node31; node32; node33; node34; node35; node36; node37; node38; node39; node40; node41; node42; node43; node44; node45; node46; node47; node48; node49; node50; node51; node52; node53; node54; }
+  { rank=same; node11; node12; node13; node14; node15; node16; node17; node18; node19; node20; node21; node22; }
+  { rank=same; node23; node27; node55; node56; node57; node58; node59; node60; node61; node62; node63; node64; node65; node66; node67; node68; node69; }
+  { rank=same; node1; node24; node25; node26; node28; node29; node30; }
+  { rank=same; node0; node2; }
+}
