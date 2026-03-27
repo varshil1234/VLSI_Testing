@@ -1,52 +1,49 @@
 #include <iostream>
-#include <chrono> // NEW: For high-resolution execution timing
+#include <chrono>
 #include "Circuit.hpp"
+
+using namespace std;
+using namespace std::chrono;
 
 int main() {
     CircuitAnalyzer analyzer;
     
-    std::string filename = "circuit.v"; 
+    string filename = "circuit.v"; 
     
-    std::cout << "1. Parsing structural Verilog from " << filename << "...\n";
+    cout << "1. Parsing structural Verilog from " << filename << "...\n";
     analyzer.parseVerilog(filename);
     
-    std::cout << "2. Explicitly inserting BRNH nodes for fanouts...\n";
+    cout << "2. Explicitly inserting BRNH nodes for fanouts...\n";
     analyzer.insertBranchNodes();
     
-    std::cout << "3. Levelizing graph (Topological Sort)...\n";
+    cout << "3. Levelizing graph (Topological Sort)...\n";
     analyzer.levelizeGraph();
     
-    // --- START SCOAP TIMER ---
-    std::cout << "4. Running Deterministic Analysis (SCOAP)...\n";
-    auto start_scoap = std::chrono::high_resolution_clock::now();
+    cout << "4. Running Deterministic Analysis (SCOAP)...\n";
+    auto start_scoap = high_resolution_clock::now();
     
     analyzer.calculateSCOAP();
     
-    auto end_scoap = std::chrono::high_resolution_clock::now();
-    auto scoap_time = std::chrono::duration_cast<std::chrono::microseconds>(end_scoap - start_scoap).count();
-    // --- END SCOAP TIMER ---
+    auto end_scoap = high_resolution_clock::now();
+    auto scoap_time = duration_cast<microseconds>(end_scoap - start_scoap).count();
 
-    // --- START COP TIMER ---
-    std::cout << "5. Running Random Pattern Analysis (COP)...\n";
-    auto start_cop = std::chrono::high_resolution_clock::now();
+    cout << "5. Running Random Pattern Analysis (COP)...\n";
+    auto start_cop = high_resolution_clock::now();
     
     analyzer.calculateCOP();
     
-    auto end_cop = std::chrono::high_resolution_clock::now();
-    auto cop_time = std::chrono::duration_cast<std::chrono::microseconds>(end_cop - start_cop).count();
-    // --- END COP TIMER ---
+    auto end_cop = high_resolution_clock::now();
+    auto cop_time = duration_cast<microseconds>(end_cop - start_cop).count();
     
-    analyzer.printResults();
+    analyzer.printFinalReport();
     analyzer.generateBottleneckReport();
-    analyzer.exportGraphviz("circuit_graph.dot");
 
-    // NEW: Print the Complexity Metrics
-    std::cout << "\n================= COMPUTATIONAL COMPLEXITY METRICS =================\n";
-    std::cout << "Theoretical Complexity : O(V + E) [Linear]\n";
-    std::cout << "Total Nodes (V)        : " << analyzer.graph.size() << " (Gates + Branches + I/O)\n";
-    std::cout << "SCOAP Execution Time   : " << scoap_time << " microseconds\n";
-    std::cout << "COP Execution Time     : " << cop_time << " microseconds\n";
-    std::cout << "====================================================================\n";
+    cout << "\n================= COMPUTATIONAL COMPLEXITY METRICS =================\n";
+    cout << "Theoretical Complexity : O(V + E) [Linear]\n";
+    cout << "Total Nodes (V)        : " << analyzer.graph.size() << " (Gates + Branches + I/O)\n";
+    cout << "SCOAP Execution Time   : " << scoap_time << " microseconds\n";
+    cout << "COP Execution Time     : " << cop_time << " microseconds\n";
+    cout << "====================================================================\n";
 
     return 0;
 }
